@@ -41,7 +41,7 @@ inv_transformed_points = trans.inverse_transform(test_pts)
 plt.scatter(
     trans.embedding_[:, 0],
     trans.embedding_[:, 1],
-    c=mnist.target,
+    c=mnist.target.cat.codes,
     cmap="Spectral",
     s=0.25,
 )
